@@ -3,7 +3,7 @@ const words = [
 
 const test = () => {
   for (let i = 0; i < words.length; i++) {
-    console.log(words[i])
+    console.log(words[i]);
   }
 }
 
