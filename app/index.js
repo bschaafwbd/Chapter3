@@ -1,18 +1,9 @@
-const words = [
-  'hello',
-  'world',
-  'hello',
-  'world',
-  'hello',
-  'world',
-  'hello',
-  'world',
-];
-
-const test = () => {
-  for (let i = 0; i < words.length; i++) {
-    console.log(words[i]);
+const add = (array) => {
+  let total = 0;
+  for (let i = 0; i < array.length; i++) {
+    total += array[i];
   }
+  return total;
 };
 
-test();
+module.exports = add;
