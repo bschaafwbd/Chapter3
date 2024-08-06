@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node app/index.js",
     "test": "jest",
+    "coverage": "jest --coverage",
     "format": "prettier --write ./app/*.js && eslint --fix ./app/*.js"
   },
   "author": "",
