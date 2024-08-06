@@ -46,4 +46,4 @@ jobs:
           name: ${{ env.COVERAGE_FILE_NAME }}
           path: coverage/
       - name: Display coverage
-        run: cat coverage/coverage-summary.json
+        run: cat coverage/coverage_file.json
