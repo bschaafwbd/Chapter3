@@ -33,8 +33,8 @@ jobs:
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v2
         with:
-          name: ${{ env.COVERAGE_FILE_NAME }}
-          path: coverage/
+          name: coverage
+          path: ./${{ env.COVERAGE_FILE_NAME }}
 
   display-coverage:
     runs-on: ubuntu-latest
@@ -44,11 +44,11 @@ jobs:
       - name: Download coverage artifact
         uses: actions/download-artifact@v2
         with:
-          name: ${{ env.COVERAGE_FILE_NAME }}
-          path: coverage/
+          name: coverage
+          path: ./${{ env.COVERAGE_FILE_NAME }}
 
       - name: List files in coverage directory
-        run: ls -l ./coverage
+        run: ls -l ./coverage_file
 
       - name: Display coverage
         run: cat coverage/coverage_file.json
