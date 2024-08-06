@@ -51,4 +51,4 @@ jobs:
         run: ls -l ./coverage
 
       - name: Display coverage
-        run: cat coverage/coverage-file.json
+        run: cat coverage/coverage-final.json
